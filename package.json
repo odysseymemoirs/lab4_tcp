@@ -1,0 +1,22 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "radioServer": "node radioServer.js",
+    "clientServer": "node clientServer.js",
+    "start": "concurrently \"npm run radioServer\" \"npm run clientServer\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-html-parser": "^1.2.18",
+    "radio-stream": "0.0.1",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0"
+  }
+}
